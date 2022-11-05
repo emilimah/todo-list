@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 100px auto 0;
+    width: 334px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 28px;
+    background: #FFDC40;
+}
+
+.content {
+    padding: 0 22px 19px;
+}
+
+.title {
+    margin: 12px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.sorting {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 12px;
+}
+
+#sorting-button {
+    opacity: .3;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+#sorting-button:hover {
+    opacity: 1 !important;
+}
+
+.todo-list {
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    list-style: none;
+    padding: 0;
+    max-height: 240px;
+    overflow-y: scroll;
+}
+
+.todo-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 27px;
+    cursor: pointer;
+}
+
+.selected {
+    opacity: .6;
+}
+
+.todo-input {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.todo-delete {
+    cursor: pointer;
+    width: 22px;
+    height: 20px;
+    background: url('icons/delete.svg') center no-repeat;
+}
+
+.todo-delete:hover {
+    background: url('icons/delete-hovered.svg') center no-repeat;
+}
+
+#add-button {
+    width: 150px;
+    height: 42px;
+    border-radius: 71px;
+    background: #9953F1;
+    margin: 18px auto 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: .2s all;
+}
+
+#add-button .plus {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #AA68FE;
+    transition: .2s all;
+    margin-right: 10px;
+}
+
+#add-button:hover {
+    background: #833AE0;
+}
+
+#add-button:hover .plus {
+    background: #9953F1;
+}
